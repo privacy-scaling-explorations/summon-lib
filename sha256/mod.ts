@@ -111,11 +111,11 @@ function reverseBytes(bits: boolean[]): boolean[] {
     throw new Error(`Input length must be a multiple of 8, got ${bits.length}`);
   }
 
-  const result: boolean[] = [];
+  let result: boolean[] = [];
 
   for (let i = 0; i < bits.length; i += 8) {
     // Extract 8-bit sequence
-    const byte = bits.slice(i, i + 8);
+    let byte = bits.slice(i, i + 8);
     // Reverse the bits within this byte and add to result
     result.push(...byte.reverse());
   }
