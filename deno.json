@@ -1,0 +1,11 @@
+{
+  "tasks": {},
+  "imports": {
+    "@std/": "https://deno.land/std@0.208.0/"
+  },
+  "lint": {
+    "rules": {
+      "exclude": ["prefer-const"]
+    }
+  }
+}
