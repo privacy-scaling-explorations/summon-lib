@@ -8,7 +8,7 @@ export default function sha256(bits: boolean[]): boolean[] {
   ];
 
   function u32ToBits(n: number): boolean[] {
-    let out = [];
+    let out: boolean[] = [];
     for (let i = 0; i < 32; i++) {
       out[31 - i] = ((n >>> i) & 1) === 1;
     }
